@@ -33,3 +33,10 @@ list(rows_even_numbers(matrix, row_mask)
 ```
 
 Funkci realizujte pouze pomoci iterátorů (balíček `itertools`) a dalších nástrojů představných na semináři. Nepoužívejte list comprehension ani jiné cykly.
+
+## Lokální testování
+Funkčnost řešení ověříte následujícím příkazem:
+
+```bash
+pytest tests.py
+```
