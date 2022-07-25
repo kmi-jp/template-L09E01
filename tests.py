@@ -16,7 +16,7 @@ matrix = [[1, 2, 3, 4], [6, 7, 8, 9], [4, 5, 6, 7]]
     ],
 )
 def test_rows_even_numbers(matrix, mask, result):
-    iterator = rows_even_numbers(matrix, mask)
+    iterator = rows_even_numbers(matrix=matrix, row_mask=mask)
     assert isinstance(iterator, Iterator)
     assert list(iterator) == result
 
