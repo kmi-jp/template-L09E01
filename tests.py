@@ -1,7 +1,7 @@
 import pytest
 from typing import Iterator
 
-from matrix import rows_even_numbers
+from matrix import iterate_rows
 
 
 matrix = [[1, 2, 3, 4], [6, 7, 8, 9], [4, 5, 6, 7]]
@@ -15,11 +15,11 @@ matrix = [[1, 2, 3, 4], [6, 7, 8, 9], [4, 5, 6, 7]]
         (matrix, [True, False, False], [2, 4]),
     ],
 )
-def test_rows_even_numbers(matrix, mask, result):
-    iterator = rows_even_numbers(matrix=matrix, row_mask=mask)
+def test_iterate_rows(matrix, mask, result):
+    iterator = iterate_rows(matrix=matrix, row_mask=mask)
     assert isinstance(iterator, Iterator)
     assert list(iterator) == result
 
 
 def test_docstring():
-    assert rows_even_numbers.__doc__
+    assert iterate_rows.__doc__
