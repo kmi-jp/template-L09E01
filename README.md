@@ -1,5 +1,5 @@
-# L09E01: Matrix rows even numbers
-Vytvořte modul `matrix` obsahující funkci `rows_even_numbers(matrix, row_mask)`. Jako první argument funkce přijímá matici ve tvaru:
+# L09E01: Matrix rows mask
+Vytvořte modul `matrix` obsahující funkci `iterate_rows(matrix, row_mask)`. Jako první argument funkce přijímá matici ve tvaru:
 
 ```python
 matrix = [
@@ -27,7 +27,7 @@ matrix = [
 
 row_mask = [True, False, True]
 
-list(rows_even_numbers(matrix, row_mask)
+list(iterate_rows(matrix, row_mask)
 
 # [2, 4, 4, 6]
 ```
