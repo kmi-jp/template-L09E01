@@ -1,5 +1,5 @@
 # L09E01: Matrix rows mask
-Vytvořte modul `matrix` obsahující funkci `iterate_rows(matrix, row_mask)`. Jako první argument funkce přijímá matici ve tvaru:
+Vytvořte modul `matrix` obsahující funkci `iterate_rows(matrix, mask)`. Jako první argument funkce přijímá matici ve tvaru:
 
 ```python
 matrix = [
@@ -13,7 +13,7 @@ A binární masku o délce počtu řádků, která určuje jaké řádky budou v
 
 ```python
 # první a třetí řádek bude vybrán, druhý ne
-row_mask = [True, False, True]
+mask = [True, False, True]
 ```
 
 Následně vrací iterátor, který produkuje všechna sudá čísla, které řádky odpovídající masce obsahují.
@@ -25,9 +25,9 @@ matrix = [
     [4, 5, 6, 7]
 ]
 
-row_mask = [True, False, True]
+mask = [True, False, True]
 
-list(iterate_rows(matrix, row_mask)
+list(iterate_rows(matrix, mask)
 
 # [2, 4, 4, 6]
 ```

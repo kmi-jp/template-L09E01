@@ -16,7 +16,7 @@ matrix = [[1, 2, 3, 4], [6, 7, 8, 9], [4, 5, 6, 7]]
     ],
 )
 def test_iterate_rows(matrix, mask, result):
-    iterator = iterate_rows(matrix=matrix, row_mask=mask)
+    iterator = iterate_rows(matrix=matrix, mask=mask)
     assert isinstance(iterator, Iterator)
     assert list(iterator) == result
 
